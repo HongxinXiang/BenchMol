@@ -1,4 +1,6 @@
-![framework](./assets/benchmol-icon-200.png)
+
+
+<p align="center"><img src="./assets/benchmol-icon.png" alt="logo" width="200px" /></p>
 
 <h3 align="center">A Multi-Modality Benchmarking Platform For Molecular Representation</h3>
 
@@ -8,9 +10,7 @@
 
 
 
-![framework](./assets/framework.png)
-
-
+<p align="center"><img src="./assets/framework.png" alt="BenchMol framework" width="90%" /></p>
 
 
 
