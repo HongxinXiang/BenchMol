@@ -32,6 +32,23 @@
 
 
 
+# Installation
+
+## From PyPi
+
+```bash
+conda create --name test_env python=3.9
+pip install benchmol
+```
+
+- If the dependencies are not automatically installed, use the following command to initialize the dependency environment:
+
+```bash
+pip install -r requirements_pip.txt
+```
+
+
+
 # Benchmarks
 
 BenchMol provides two new benchmarks, MBANet and StructNet.
@@ -98,12 +115,15 @@ Use case for fine-tuning is provided with benchmol:
 
 
 
+# Releases
+For more information on BenchMol versions, see the [Releases page](./RELEASE.md).
+
 
 # Reference
 
 If you find our code or anything else helpful, please do not hesitate to cite the following relevant papers:
 
-```xnl
+```xml
 
 ```
 

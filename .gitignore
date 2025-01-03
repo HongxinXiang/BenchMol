@@ -14,3 +14,5 @@ no_submission*
 /datasets/
 resumes/
 data_process/
+dist/
+benchmol.egg-info/
