@@ -12,7 +12,7 @@ def load_requirements(file_name):
         raise FileNotFoundError(f"{file_name} not found!")
 
 # read dependency packages
-requirements = load_requirements("requirements.txt")
+requirements = load_requirements("https://github.com/HongxinXiang/BenchMol/blob/master/requirements.txt")
 
 # these things are needed for the README.md show on pypi
 here = os.path.abspath(os.path.dirname(__file__))

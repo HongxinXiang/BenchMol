@@ -1,6 +1,6 @@
 
 
-<p align="center"><img src="./assets/benchmol-icon.png" alt="logo" width="200px" /></p>
+<p align="center"><img src="https://github.com/HongxinXiang/BenchMol/blob/master/assets/benchmol-icon.png" alt="logo" width="200px" /></p>
 
 <h3 align="center">A Multi-Modality Benchmarking Platform For Molecular Representation</h3>
 
@@ -10,7 +10,7 @@
 
 
 
-<p align="center"><img src="./assets/framework.png" alt="BenchMol framework" width="90%" /></p>
+<p align="center"><img src="https://github.com/HongxinXiang/BenchMol/blob/master/assets/framework.png" alt="BenchMol framework" width="90%" /></p>
 
 
 
@@ -85,18 +85,18 @@ The following shows a use case of extracting features from different modalities 
 
 | Description                                                  | Tutorial Links                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Extracting Molecular Fingerprints                            | [1_extract_fp_features.ipynb](./tutorials/1_extract_fp_features.ipynb) |
-| Extracting features from sequence using un-pretrained CHEM-BERT | [1_extract_sequence_features.ipynb](./tutorials/1_extract_sequence_features.ipynb) |
-| Extracting features from geometry image using IEM            | [1_extract_geometry_image_features.ipynb](./tutorials/1_extract_geometry_image_features.ipynb) |
-| Extracting features from graph using GIN                     | [1_extract_graph_features.ipynb](./tutorials/1_extract_graph_features.ipynb) |
-| Extracting features from molecular image using ImageMol      | [1_extract_image_features.ipynb](./tutorials/1_extract_image_features.ipynb) |
-| Extracting features from video using VideoMol                | [1_extract_video_features.ipynb](./tutorials/1_extract_video_features.ipynb) |
+| Extracting Molecular Fingerprints                            | [1_extract_fp_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_fp_features.ipynb) |
+| Extracting features from sequence using un-pretrained CHEM-BERT | [1_extract_sequence_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_sequence_features.ipynb) |
+| Extracting features from geometry image using IEM            | [1_extract_geometry_image_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_geometry_image_features.ipynb) |
+| Extracting features from graph using GIN                     | [1_extract_graph_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_graph_features.ipynb) |
+| Extracting features from molecular image using ImageMol      | [1_extract_image_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_image_features.ipynb) |
+| Extracting features from video using VideoMol                | [1_extract_video_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_video_features.ipynb) |
 
 
 
 ## Linear Probing
 
-Use case for linear probing is provided with benchmol: [2_linear_probing.ipynb](./tutorials/2_linear_probing.ipynb)
+Use case for linear probing is provided with benchmol: [2_linear_probing.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/2_linear_probing.ipynb)
 
 
 
@@ -106,17 +106,17 @@ Use case for fine-tuning is provided with benchmol:
 
 | Description                              | Tutorial Links                                                        |
 |------------------------------------------|-----------------------------------------------------------------------|
-| Fine-tuning with sequence modality       | [3_fine_tuning_sequence.ipynb](./tutorials/3_fine_tuning_sequence.ipynb) |
-| Fine-tuning with graph modality          | [3_fine_tuning_graph.ipynb](./tutorials/3_fine_tuning_graph.ipynb)    |
-| Fine-tuning with geometry graph modality | [3_fine_tuning_geometry.ipynb](./tutorials/3_fine_tuning_geometry.ipynb)    |
-| Fine-tuning with image modality          | [3_fine_tuning_image.ipynb](./tutorials/3_fine_tuning_image.ipynb)    |
-| Fine-tuning with geometry image modality | [3_fine_tuning_geometry_image.ipynb](./tutorials/3_fine_tuning_geometry_image.ipynb)    |
-| Fine-tuning with geometry video modality | [3_fine_tuning_video.ipynb](./tutorials/3_fine_tuning_video.ipynb)    |
+| Fine-tuning with sequence modality       | [3_fine_tuning_sequence.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_sequence.ipynb) |
+| Fine-tuning with graph modality          | [3_fine_tuning_graph.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_graph.ipynb)    |
+| Fine-tuning with geometry graph modality | [3_fine_tuning_geometry.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_geometry.ipynb)    |
+| Fine-tuning with image modality          | [3_fine_tuning_image.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_image.ipynb)    |
+| Fine-tuning with geometry image modality | [3_fine_tuning_geometry_image.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_geometry_image.ipynb)    |
+| Fine-tuning with geometry video modality | [3_fine_tuning_video.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_video.ipynb)    |
 
 
 
 # Releases
-For more information on BenchMol versions, see the [Releases page](./RELEASE.md).
+For more information on BenchMol versions, see the [Releases page](https://github.com/HongxinXiang/BenchMol/blob/master/RELEASE.md).
 
 
 # Reference
