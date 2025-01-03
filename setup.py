@@ -8,8 +8,8 @@ def load_requirements(file_name):
     if os.path.exists(file_name):
         with open(file_name, "r") as file:
             return file.read().splitlines()
-    else:
-        raise FileNotFoundError(f"{file_name} not found!")
+    # else:
+    #     raise FileNotFoundError(f"{file_name} not found!")
 
 # read dependency packages
 requirements = load_requirements("https://github.com/HongxinXiang/BenchMol/blob/master/requirements.txt")
@@ -20,7 +20,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'A Multi-Modality Benchmarking Platform For Molecular Representation'
 
 # define setup setting
@@ -45,6 +45,6 @@ setup(
         "Operating System :: Microsoft :: Windows",
         "License :: OSI Approved :: MIT License",
     ],
-    python_requires=">=3.6",  # python version
+    python_requires=">=3.0",  # python version
     url="https://github.com/HongxinXiang/BenchMol",
 )
