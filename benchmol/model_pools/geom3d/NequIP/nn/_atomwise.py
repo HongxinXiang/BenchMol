@@ -6,9 +6,9 @@ import torch.nn.functional
 
 from e3nn.o3 import Linear
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.data.transforms import TypeMapper
-from model_pools.geom3d.NequIP.utils import scatter
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.data.transforms import TypeMapper
+from benchmol.model_pools.geom3d.NequIP.utils import scatter
 from ._graph_mixin import GraphModuleMixin
 
 

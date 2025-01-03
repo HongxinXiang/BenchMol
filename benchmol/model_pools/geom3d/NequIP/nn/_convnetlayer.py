@@ -5,13 +5,13 @@ import logging
 from e3nn import o3
 from e3nn.nn import Gate, NormActivation
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import (
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import (
     GraphModuleMixin,
     InteractionBlock,
 )
-from model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
-from model_pools.geom3d.NequIP.utils.tp_utils import tp_path_exists
+from benchmol.model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
+from benchmol.model_pools.geom3d.NequIP.utils.tp_utils import tp_path_exists
 
 
 acts = {

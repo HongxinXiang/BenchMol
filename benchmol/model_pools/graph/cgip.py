@@ -2,7 +2,7 @@ import os
 
 import torch
 
-from model_pools.graph.deepergcn import load_DeeperGCN
+from benchmol.model_pools.graph.deepergcn import load_DeeperGCN
 
 
 class CGIP_G(torch.nn.Module):

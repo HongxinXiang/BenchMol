@@ -1,6 +1,6 @@
 import torch
 
-from model_pools.geom3d.NequIP.nn.radial_basis import BesselBasis
+from benchmol.model_pools.geom3d.NequIP.nn.radial_basis import BesselBasis
 
 
 class NormalizedBasis(torch.nn.Module):

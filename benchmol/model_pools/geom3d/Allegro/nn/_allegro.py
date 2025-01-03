@@ -6,10 +6,10 @@ import torch
 from e3nn import o3
 from e3nn.util.jit import compile_mode
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
-from model_pools.geom3d.NequIP.utils import scatter
-from model_pools.geom3d.NequIP.utils.tp_utils import tp_path_exists
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.utils import scatter
+from benchmol.model_pools.geom3d.NequIP.utils.tp_utils import tp_path_exists
 from ._fc import ScalarMLPFunction
 from ._strided import Contracter, MakeWeightedChannels, Linear
 from .cutoffs import cosine_cutoff, polynomial_cutoff

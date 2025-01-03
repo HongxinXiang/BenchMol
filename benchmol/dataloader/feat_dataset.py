@@ -4,7 +4,7 @@ import pandas as pd
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 
-from dataloader.data_utils import get_labels_from_df
+from benchmol.dataloader.data_utils import get_labels_from_df
 
 
 class FeatDataset(Dataset):

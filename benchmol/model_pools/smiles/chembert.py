@@ -4,9 +4,9 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from transformers.models.roberta import RobertaModel, RobertaConfig
 
-from model_pools.smiles.abc_smiles import SmilesABC
-from model_pools.smiles.chembert_helper.dataset import Vocab, ChemBertDataset
-from model_pools.smiles.chembert_helper.model_component import Smiles_embedding
+from benchmol.model_pools.smiles.abc_smiles import SmilesABC
+from benchmol.model_pools.smiles.chembert_helper.dataset import Vocab, ChemBertDataset
+from benchmol.model_pools.smiles.chembert_helper.model_component import Smiles_embedding
 from torch.utils.data import default_collate
 
 

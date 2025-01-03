@@ -7,7 +7,7 @@ import ase
 import ase.build
 from ase.calculators.emt import EMT
 
-from model_pools.geom3d.NequIP.data import AtomicInMemoryDataset, AtomicData, AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.data import AtomicInMemoryDataset, AtomicData, AtomicDataDict
 from .transforms import TypeMapper
 
 

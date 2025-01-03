@@ -3,10 +3,12 @@ import torch.nn.functional as F
 from torch import nn
 from torch_geometric.nn import global_max_pool, global_mean_pool
 
-from model_pools.base_utils import get_predictor
-from model_pools.geom3d import *
-from model_pools.geom3d.NequIP.model import model_from_config
-from model_pools.geom3d.unimol import UniMol
+from benchmol.model_pools.base_utils import get_predictor
+from benchmol.model_pools.geom3d import *
+from benchmol.model_pools.geom3d.NequIP.model import model_from_config
+from benchmol.model_pools.geom3d.unimol import UniMol
+from benchmol.configs.model_params import add_geometry_model_params
+from benchmol.configs.model_params import get_default_params
 
 
 def preprocess_input(one_hot, charges, charge_power, charge_scale, device):
@@ -39,6 +41,9 @@ class GeometryModelFactory(torch.nn.Module):
         self.pretrain_gnn_path = pretrain_gnn_path
         self.model_key = model_key
         self.emb_dim = emb_dim
+
+        if args is None:
+            args = get_default_params()
 
         self.args = args
         self.node_class, self.edge_class = 119, 5  # for molecules

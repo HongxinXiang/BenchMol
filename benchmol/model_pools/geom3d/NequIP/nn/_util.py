@@ -1,7 +1,7 @@
 import torch
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
 
 
 class SaveForOutput(torch.nn.Module, GraphModuleMixin):

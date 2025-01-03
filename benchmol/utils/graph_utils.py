@@ -3,7 +3,7 @@ import torch.nn as nn, torch.nn.functional as F
 from math import sqrt
 from scipy import stats
 from rdkit.Chem import AllChem
-from model_pools.graph.helper import graph_data_obj_to_nx_simple, nx_to_graph_data_obj_simple
+from benchmol.model_pools.graph.helper import graph_data_obj_to_nx_simple, nx_to_graph_data_obj_simple
 
 logger = logging.getLogger()
 logging.basicConfig(level=logging.INFO)

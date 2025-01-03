@@ -85,7 +85,17 @@ Use case for linear probing is provided with benchmol: [2_linear_probing.ipynb](
 
 ## Fine-tuning
 
-Use case for fine-tuning is provided with benchmol: [3_fine_tuning.ipynb](./tutorials/3_fine_tuning.ipynb) 
+Use case for fine-tuning is provided with benchmol: 
+
+| Description                              | Tutorial Links                                                        |
+|------------------------------------------|-----------------------------------------------------------------------|
+| Fine-tuning with sequence modality       | [3_fine_tuning_sequence.ipynb](./tutorials/3_fine_tuning_sequence.ipynb) |
+| Fine-tuning with graph modality          | [3_fine_tuning_graph.ipynb](./tutorials/3_fine_tuning_graph.ipynb)    |
+| Fine-tuning with geometry graph modality | [3_fine_tuning_geometry.ipynb](./tutorials/3_fine_tuning_geometry.ipynb)    |
+| Fine-tuning with image modality          | [3_fine_tuning_image.ipynb](./tutorials/3_fine_tuning_image.ipynb)    |
+| Fine-tuning with geometry image modality | [3_fine_tuning_geometry_image.ipynb](./tutorials/3_fine_tuning_geometry_image.ipynb)    |
+| Fine-tuning with geometry video modality | [3_fine_tuning_video.ipynb](./tutorials/3_fine_tuning_video.ipynb)    |
+
 
 
 

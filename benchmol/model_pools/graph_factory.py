@@ -1,9 +1,9 @@
 import torch
 
-from model_pools.base_utils import get_predictor
-from model_pools.graph.gnns import GNN_graphpred as basic_GNN_1
-from model_pools.graph.gnns_molebert import GNN_graphpred as basic_GNN_2
-from model_pools.graph.cgip import CGIP_G
+from benchmol.model_pools.base_utils import get_predictor
+from benchmol.model_pools.graph.gnns import GNN_graphpred as basic_GNN_1
+from benchmol.model_pools.graph.gnns_molebert import GNN_graphpred as basic_GNN_2
+from benchmol.model_pools.graph.cgip import CGIP_G
 
 
 class GraphModelFactory(torch.nn.Module):

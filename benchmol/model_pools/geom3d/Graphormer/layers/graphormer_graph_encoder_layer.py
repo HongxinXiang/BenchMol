@@ -12,7 +12,7 @@ import torch
 import torch.nn as nn
 
 from .multihead_attention import MultiheadAttention
-from model_pools.geom3d.TransformerM.modules import FairseqDropout, LayerNorm, quant_noise, utils
+from benchmol.model_pools.geom3d.TransformerM.modules import FairseqDropout, LayerNorm, quant_noise, utils
 
 
 class GraphormerGraphEncoderLayer(nn.Module):

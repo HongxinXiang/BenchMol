@@ -3,14 +3,14 @@ from typing import Optional, Dict, Callable
 
 import torch
 
-from model_pools.geom3d.NequIP.utils import scatter
+from benchmol.model_pools.geom3d.NequIP.utils import scatter
 
 from e3nn import o3
 from e3nn.nn import FullyConnectedNet
 from e3nn.o3 import TensorProduct, Linear, FullyConnectedTensorProduct
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
 from ._graph_mixin import GraphModuleMixin
 
 

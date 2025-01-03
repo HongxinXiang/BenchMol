@@ -3,7 +3,7 @@ import os
 import timm
 import torch
 
-from model_pools.base_utils import get_timm_model_names, get_predictor
+from benchmol.model_pools.base_utils import get_timm_model_names, get_predictor
 
 
 class ImageModelFactory(torch.nn.Module):

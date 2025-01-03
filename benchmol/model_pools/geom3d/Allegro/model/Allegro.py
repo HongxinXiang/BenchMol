@@ -3,24 +3,24 @@ import logging
 
 from e3nn import o3
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict, AtomicDataset
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict, AtomicDataset
 
-from model_pools.geom3d.NequIP.nn import SequentialGraphNetwork, AtomwiseReduce
-from model_pools.geom3d.NequIP.nn.radial_basis import BesselBasis
+from benchmol.model_pools.geom3d.NequIP.nn import SequentialGraphNetwork, AtomwiseReduce
+from benchmol.model_pools.geom3d.NequIP.nn.radial_basis import BesselBasis
 
-from model_pools.geom3d.NequIP.nn.embedding import (
+from benchmol.model_pools.geom3d.NequIP.nn.embedding import (
     OneHotAtomEncoding,
     SphericalHarmonicEdgeAttrs,
     RadialBasisEdgeEncoding,
 )
 
-from model_pools.geom3d.Allegro.nn import (
+from benchmol.model_pools.geom3d.Allegro.nn import (
     NormalizedBasis,
     EdgewiseEnergySum,
     Allegro_Module,
     ScalarMLP,
 )
-from model_pools.geom3d.Allegro._keys import EDGE_FEATURES, EDGE_ENERGY
+from benchmol.model_pools.geom3d.Allegro._keys import EDGE_FEATURES, EDGE_ENERGY
 
 
 def Allegro(config, initialize: bool, dataset: Optional[AtomicDataset] = None):

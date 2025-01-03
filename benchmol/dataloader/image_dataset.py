@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-from dataloader.data_utils import get_labels_from_df, read_image
+from benchmol.dataloader.data_utils import get_labels_from_df, read_image
 
 
 def get_image_path_list(root, data_type, index_list, img_dir="", return_dataset_class=False):

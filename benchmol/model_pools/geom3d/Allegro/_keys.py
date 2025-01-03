@@ -7,7 +7,7 @@ if sys.version_info[1] >= 8:
 else:
     from typing_extensions import Final
 
-from model_pools.geom3d.NequIP.data import register_fields
+from benchmol.model_pools.geom3d.NequIP.data import register_fields
 
 EDGE_ENERGY: Final[str] = "edge_energy"
 EDGE_FEATURES: Final[str] = "edge_features"

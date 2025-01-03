@@ -11,10 +11,10 @@ from rdkit import Chem
 from torch import nn
 from torch.utils.data import DataLoader
 
-from model_pools.smiles.abc_smiles import SmilesABC
-from model_pools.smiles.molformer_helper.rotate_attention.rotate_builder import RotateEncoderBuilder as rotate_builder
-from model_pools.smiles.molformer_helper.tokenizer.tokenizer import MolTranBertTokenizer
-from dataloader.data_utils import get_labels_from_df
+from benchmol.model_pools.smiles.abc_smiles import SmilesABC
+from benchmol.model_pools.smiles.molformer_helper.rotate_attention.rotate_builder import RotateEncoderBuilder as rotate_builder
+from benchmol.model_pools.smiles.molformer_helper.tokenizer.tokenizer import MolTranBertTokenizer
+from benchmol.dataloader.data_utils import get_labels_from_df
 
 # Reference: https://github.com/IBM/molformer
 

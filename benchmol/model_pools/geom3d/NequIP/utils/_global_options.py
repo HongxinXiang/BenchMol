@@ -5,7 +5,7 @@ import torch
 import e3nn
 import e3nn.util.jit
 
-from model_pools.geom3d.NequIP.data import register_fields
+from benchmol.model_pools.geom3d.NequIP.data import register_fields
 from .misc import dtype_from_name
 from .auto_init import instantiate
 from .test import set_irreps_debug

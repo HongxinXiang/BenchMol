@@ -2,7 +2,7 @@ from argparse import Namespace
 
 import torch
 import torch.nn.functional as F
-from model_pools.graph.cgip_helper import AtomEncoder, BondEncoder
+from benchmol.model_pools.graph.cgip_helper import AtomEncoder, BondEncoder
 from torch import nn
 from torch.nn import Sequential as Seq, Linear as Lin
 from torch_geometric.nn import MessagePassing

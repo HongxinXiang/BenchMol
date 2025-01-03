@@ -5,9 +5,9 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
-from metrics.metric import comprehensive_evaluate
-from model_pools.base_utils import save_checkpoint
-from utils.public_utils import get_tqdm_desc, is_left_better_right
+from benchmol.metrics.metric import comprehensive_evaluate
+from benchmol.model_pools.base_utils import save_checkpoint
+from benchmol.utils.public_utils import get_tqdm_desc, is_left_better_right
 
 
 class Trainer:

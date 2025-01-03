@@ -4,7 +4,7 @@ import math
 import numpy as np
 import torch
 from scipy.special import binom
-from model_pools.geom3d.SchNet import GaussianSmearing
+from benchmol.model_pools.geom3d.SchNet import GaussianSmearing
 
 
 class PolynomialEnvelope(torch.nn.Module):

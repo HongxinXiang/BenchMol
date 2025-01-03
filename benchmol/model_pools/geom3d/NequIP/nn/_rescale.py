@@ -4,8 +4,8 @@ import torch
 
 from e3nn.util.jit import compile_mode
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
 
 
 @compile_mode("script")

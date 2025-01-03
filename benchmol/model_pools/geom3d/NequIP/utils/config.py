@@ -39,7 +39,7 @@ import inspect
 from copy import deepcopy
 from typing import Optional
 
-from model_pools.geom3d.NequIP.utils.savenload import save_file, load_file
+from benchmol.model_pools.geom3d.NequIP.utils.savenload import save_file, load_file
 
 
 class Config(object):

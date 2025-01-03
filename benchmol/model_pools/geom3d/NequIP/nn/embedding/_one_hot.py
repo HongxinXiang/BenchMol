@@ -4,7 +4,7 @@ import torch.nn.functional
 from e3nn.o3 import Irreps
 from e3nn.util.jit import compile_mode
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
 from .._graph_mixin import GraphModuleMixin
 
 

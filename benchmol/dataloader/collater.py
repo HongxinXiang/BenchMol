@@ -4,10 +4,10 @@ import numpy as np
 import torch
 from torch.utils.data.dataloader import default_collate
 from torch_geometric.data import Data, Batch
-from utils.splitter import *
+from benchmol.utils.splitter import *
 
-from model_pools.geom3d.UniMol.unimol_tools.data.conformer import coords2unimol
-from model_pools.geom3d.UniMol.unimol_tools.utils import pad_1d_tokens, pad_2d, pad_coords
+from benchmol.model_pools.geom3d.UniMol.unimol_tools.data.conformer import coords2unimol
+from benchmol.model_pools.geom3d.UniMol.unimol_tools.utils import pad_1d_tokens, pad_2d, pad_coords
 
 string_classes, int_classes = str, int
 

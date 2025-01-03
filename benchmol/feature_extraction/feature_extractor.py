@@ -8,11 +8,11 @@ from torch.utils.data import DataLoader
 from torchvision import transforms
 from tqdm import tqdm
 
-from dataloader.image_dataset import ImageDataset, MultiViewImageDataset, MultiConfImageDataset
-from dataloader.graph_dataset import GraphDataset
-from dataloader.collater import Collater
-from data_process.molecules.get_fp_features import FeaturesGeneration
-from data_process.molecules.fingerprints import fpFunc_dict
+from benchmol.dataloader.image_dataset import ImageDataset, MultiViewImageDataset, MultiConfImageDataset
+from benchmol.dataloader.graph_dataset import GraphDataset
+from benchmol.dataloader.collater import Collater
+from benchmol.data_process.molecules.get_fp_features import FeaturesGeneration
+from benchmol.data_process.molecules.fingerprints import fpFunc_dict
 from sklearn.preprocessing import Normalizer
 
 

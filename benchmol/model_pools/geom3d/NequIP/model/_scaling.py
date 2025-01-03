@@ -3,9 +3,9 @@ from typing import List, Optional, Union
 
 import torch
 
-from model_pools.geom3d.NequIP.nn import RescaleOutput, GraphModuleMixin, PerSpeciesScaleShift
-from model_pools.geom3d.NequIP.data import AtomicDataDict, AtomicDataset
-from model_pools.geom3d.NequIP.data.transforms import TypeMapper
+from benchmol.model_pools.geom3d.NequIP.nn import RescaleOutput, GraphModuleMixin, PerSpeciesScaleShift
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict, AtomicDataset
+from benchmol.model_pools.geom3d.NequIP.data.transforms import TypeMapper
 
 
 RESCALE_THRESHOLD = 1e-6

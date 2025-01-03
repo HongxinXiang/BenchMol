@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from model_pools.geom3d.GPS_layer import GPSLayer
+from benchmol.model_pools.geom3d.GPS_layer import GPSLayer
 from ogb.graphproppred.mol_encoder import AtomEncoder, BondEncoder
 from torch_geometric.nn import global_mean_pool
 

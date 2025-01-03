@@ -9,9 +9,9 @@ from e3nn.util.jit import compile_mode
 from e3nn.util.codegen import CodeGenMixin
 from e3nn.math import normalize2mom
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
-from model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.nn.nonlinearities import ShiftedSoftPlus
 
 
 @compile_mode("script")

@@ -3,7 +3,7 @@ from typing import Optional, Tuple
 
 import torch
 from torch import Tensor, nn
-from model_pools.geom3d.TransformerM.modules import FairseqDropout, quant_noise, utils
+from benchmol.model_pools.geom3d.TransformerM.modules import FairseqDropout, quant_noise, utils
 
 
 class MultiheadAttention(nn.Module):

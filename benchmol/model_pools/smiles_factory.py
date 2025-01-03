@@ -1,7 +1,7 @@
 import torch
-from model_pools.smiles.molformer import Molformer
-from model_pools.base_utils import get_predictor
-from model_pools.smiles.chembert import Smiles_BERT, MolRoberta
+from benchmol.model_pools.smiles.molformer import Molformer
+from benchmol.model_pools.base_utils import get_predictor
+from benchmol.model_pools.smiles.chembert import Smiles_BERT, MolRoberta
 
 
 class SmilesModelFactory(torch.nn.Module):

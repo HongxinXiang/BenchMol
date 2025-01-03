@@ -6,8 +6,8 @@ import torch
 
 from e3nn import o3
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.utils import instantiate
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.utils import instantiate
 
 
 class GraphModuleMixin:

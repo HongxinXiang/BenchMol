@@ -2,9 +2,9 @@ import inspect
 from typing import Optional
 
 # from Geom3D.models.NequIP.data import AtomicDataset
-from model_pools.geom3d.NequIP.data.transforms import TypeMapper
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
-from model_pools.geom3d.NequIP.utils import load_callable, instantiate
+from benchmol.model_pools.geom3d.NequIP.data.transforms import TypeMapper
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.utils import load_callable, instantiate
 
 
 def model_from_config(

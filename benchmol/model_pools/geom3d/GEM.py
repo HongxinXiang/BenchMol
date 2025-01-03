@@ -11,9 +11,9 @@ from dgl import DGLGraph
 from dgl.nn.pytorch.glob import AvgPooling
 from torch import Tensor, nn
 
-from model_pools.geom3d.GEM_helpers.features import FLOAT_BOND_ANGLE_FEATURES, FLOAT_BOND_FEATURES, \
+from benchmol.model_pools.geom3d.GEM_helpers.features import FLOAT_BOND_ANGLE_FEATURES, FLOAT_BOND_FEATURES, \
     LABEL_ENCODED_ATOM_FEATURES, LABEL_ENCODED_BOND_FEATURES
-from model_pools.geom3d.GEM_helpers.layers import FeaturesEmbedding, FeaturesRBF, SimpleGIN, SqrtGraphNorm
+from benchmol.model_pools.geom3d.GEM_helpers.layers import FeaturesEmbedding, FeaturesRBF, SimpleGIN, SqrtGraphNorm
 
 
 class InnerGNN(nn.Module):

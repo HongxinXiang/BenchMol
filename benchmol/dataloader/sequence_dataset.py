@@ -1,11 +1,11 @@
 from torch_geometric.data import InMemoryDataset
 import torch
 from torch.utils.data import DataLoader
-from dataloader.collater import Collater
+from benchmol.dataloader.collater import Collater
 import pandas as pd
 import numpy as np
-from model_pools.smiles.molformer import MultitaskEmbeddingDataset
-from model_pools.smiles.chembert import Vocab, ChemBertDataset
+from benchmol.model_pools.smiles.molformer import MultitaskEmbeddingDataset
+from benchmol.model_pools.smiles.chembert import Vocab, ChemBertDataset
 
 
 class TrainValTestFromCSVFactory():

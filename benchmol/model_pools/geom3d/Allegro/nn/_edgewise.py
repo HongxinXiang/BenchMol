@@ -2,10 +2,10 @@ from typing import Optional
 import math
 
 import torch
-from model_pools.geom3d.NequIP.utils import scatter
+from benchmol.model_pools.geom3d.NequIP.utils import scatter
 
-from model_pools.geom3d.NequIP.data import AtomicDataDict
-from model_pools.geom3d.NequIP.nn import GraphModuleMixin
+from benchmol.model_pools.geom3d.NequIP.data import AtomicDataDict
+from benchmol.model_pools.geom3d.NequIP.nn import GraphModuleMixin
 
 from .. import _keys
 

@@ -1,8 +1,8 @@
 import torch
-from utils.evaluate import metric as utils_evaluate_metric
-from utils.evaluate import metric_multitask as utils_evaluate_metric_multitask
-from utils.evaluate import metric_reg as utils_evaluate_metric_reg
-from utils.evaluate import metric_reg_multitask as utils_evaluate_metric_reg_multitask
+from benchmol.utils.evaluate import metric as utils_evaluate_metric
+from benchmol.utils.evaluate import metric_multitask as utils_evaluate_metric_multitask
+from benchmol.utils.evaluate import metric_reg as utils_evaluate_metric_reg
+from benchmol.utils.evaluate import metric_reg_multitask as utils_evaluate_metric_reg_multitask
 
 
 def comprehensive_evaluate(y_true, y_logit, task_type, return_data_dict=False):

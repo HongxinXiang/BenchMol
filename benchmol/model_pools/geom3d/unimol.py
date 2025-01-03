@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-from model_pools.geom3d.UniMol.unimol_tools.models.unimol import UniMolModel, molecule_architecture
+from benchmol.model_pools.geom3d.UniMol.unimol_tools.models.unimol import UniMolModel, molecule_architecture
 
 
 class UniMol(nn.Module):
@@ -25,7 +25,7 @@ class UniMol(nn.Module):
 
 
 if __name__ == '__main__':
-    from model_pools.geom3d.UniMol.unimol_tools.data.conformer import coords2unimol
+    from benchmol.model_pools.geom3d.UniMol.unimol_tools.data.conformer import coords2unimol
     import lmdb, pickle
 
     args = molecule_architecture()

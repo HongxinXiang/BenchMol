@@ -1,4 +1,4 @@
-
+from argparse import Namespace
 
 
 def add_geometry_model_params(parser):
@@ -119,3 +119,41 @@ def add_geometry_model_params(parser):
     parser.add_argument("--ProNet_dropout", type=float, default=0.3)
 
     return parser
+
+
+def get_default_params():
+    return Namespace(SchNet_num_filters=128, SchNet_num_interactions=6, SchNet_num_gaussians=51, SchNet_cutoff=10,
+                     SchNet_readout='mean', SchNet_gamma=None, TFN_num_layers=7, TFN_num_channels=32, TFN_num_degrees=4,
+                     TFN_num_nlayers=1, SE3_Transformer_num_layers=7, SE3_Transformer_num_channels=32,
+                     SE3_Transformer_num_degrees=4, SE3_Transformer_num_nlayers=1, SE3_Transformer_div=2,
+                     SE3_Transformer_n_heads=8, EGNN_n_layers=7, EGNN_attention=1, EGNN_node_attr=0,
+                     EGNN_positions_weight=1.0, EGNN_charge_power=2, EGNN_radius_cutoff=5.0,
+                     DimeNetPlusPlus_num_blocks=4, DimeNetPlusPlus_int_emb_size=64, DimeNetPlusPlus_basis_emb_size=8,
+                     DimeNetPlusPlus_out_emb_channels=128, DimeNetPlusPlus_num_spherical=7,
+                     DimeNetPlusPlus_num_radial=6, DimeNetPlusPlus_cutoff=5.0, DimeNetPlusPlus_envelope_exponent=5,
+                     DimeNetPlusPlus_num_before_skip=1, DimeNetPlusPlus_num_after_skip=2,
+                     DimeNetPlusPlus_num_output_layers=3, DimeNetPlusPlus_readout='add', SphereNet_cutoff=5.0,
+                     SphereNet_num_layers=4, SphereNet_int_emb_size=64, SphereNet_basis_emb_size_dist=8,
+                     SphereNet_basis_emb_size_angle=8, SphereNet_basis_emb_size_torsion=8,
+                     SphereNet_out_emb_channels=256, SphereNet_num_spherical=3, SphereNet_num_radial=6,
+                     SphereNet_envelope_exponent=5, SphereNet_num_before_skip=1, SphereNet_num_after_skip=2,
+                     SphereNet_num_output_layers=3, SEGNN_radius=2, SEGNN_N=7, SEGNN_lmax_h=2, SEGNN_lmax_pos=3,
+                     SEGNN_norm='instance', SEGNN_pool='avg', SEGNN_edge_inference=0, PaiNN_radius_cutoff=5.0,
+                     PaiNN_n_interactions=3, PaiNN_n_rbf=20, PaiNN_readout='add', PaiNN_gamma=None,
+                     GemNet_num_spherical=7, GemNet_num_radial=6, GemNet_num_blocks=4, GemNet_emb_size_trip=64,
+                     GemNet_emb_size_quad=32, GemNet_emb_size_rbf=16, GemNet_emb_size_cbf=16, GemNet_emb_size_sbf=32,
+                     GemNet_emb_size_bil_trip=64, GemNet_emb_size_bil_quad=32, GemNet_num_before_skip=1,
+                     GemNet_num_after_skip=1, GemNet_num_concat=1, GemNet_num_atom=2, GemNet_cutoff=5.0,
+                     GemNet_int_cutoff=10.0, GemNet_triplets_only=1, GemNet_direct_forces=0, GemNet_envelope_exponent=5,
+                     GemNet_extensive=1, GemNet_forces_coupled=0, GemNet_output_init='HeOrthogonal',
+                     GemNet_activation='swish', GemNet_scale_file='scaling_factors.json', NequIP_radius_cutoff=4.0,
+                     Equiformer_radius=5, Equiformer_irreps_in='5x0e', Equiformer_num_basis=128,
+                     Equiformer_hyperparameter=0, ProNet_level='aminoacid', ProNet_dropout=0.3)
+
+
+if __name__ == '__main__':
+    from argparse import ArgumentParser
+    parser = ArgumentParser(description='Parameters of GeometryFactory')
+    parser = add_geometry_model_params(parser)
+    args = parser.parse_args()
+    print(args)
