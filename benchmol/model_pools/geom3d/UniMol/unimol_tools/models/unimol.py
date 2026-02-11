@@ -69,12 +69,21 @@ class UniMolModel(nn.Module):
             name = data_type + '_' + name
         else:
             name = data_type
-        if not os.path.exists(os.path.join(WEIGHT_DIR, MODEL_CONFIG['weight'][name])):
-            weight_download(MODEL_CONFIG['weight'][name], WEIGHT_DIR)
-        if not os.path.exists(os.path.join(WEIGHT_DIR, MODEL_CONFIG['dict'][name])):
-            weight_download(MODEL_CONFIG['dict'][name], WEIGHT_DIR)
-        self.pretrain_path = os.path.join(WEIGHT_DIR, MODEL_CONFIG['weight'][name])
-        self.dictionary = Dictionary.load(os.path.join(WEIGHT_DIR, MODEL_CONFIG['dict'][name]))
+
+        # default setting
+        pretrain_path = os.path.dirname(__file__) + "/../../../../../" + "checkpoints/pretrained-geometry/Uni-Mol-Models/mol_pre_no_h_220816.pt"
+        dict_path = os.path.dirname(__file__) + "/../../../../../" + "checkpoints/pretrained-geometry/Uni-Mol-Models/mol.dict.txt"
+        if os.path.exists(pretrain_path) and os.path.exists(dict_path):
+            self.pretrain_path = pretrain_path
+            self.dictionary = Dictionary.load(dict_path)
+        else:
+            if not os.path.exists(os.path.join(WEIGHT_DIR, MODEL_CONFIG['weight'][name])):
+                weight_download(MODEL_CONFIG['weight'][name], WEIGHT_DIR)
+            if not os.path.exists(os.path.join(WEIGHT_DIR, MODEL_CONFIG['dict'][name])):
+                weight_download(MODEL_CONFIG['dict'][name], WEIGHT_DIR)
+            self.pretrain_path = os.path.join(WEIGHT_DIR, MODEL_CONFIG['weight'][name])
+            self.dictionary = Dictionary.load(os.path.join(WEIGHT_DIR, MODEL_CONFIG['dict'][name]))
+
         self.mask_idx = self.dictionary.add_symbol("[MASK]", is_special=True)
         self.padding_idx = self.dictionary.pad()
         self.embed_tokens = nn.Embedding(

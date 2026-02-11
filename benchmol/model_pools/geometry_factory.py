@@ -154,14 +154,10 @@ class GeometryModelFactory(torch.nn.Module):
             )
             graph_pred_linear = None
 
-        elif self.model_name == "UniMol":
+        elif self.model_name in ["UniMol", "UniMol_no_pretrain"]:
             self.emb_dim = 512  # UniMol 的预训练模型必须是 512
-            model = UniMol(return_repr=True, return_atomic_reprs=False, remove_hs=True, use_pretrained=True)
-            graph_pred_linear = None
-
-        elif self.model_name == "UniMol_no_pretrain":
-            self.emb_dim = 512  # UniMol 的预训练模型必须是 512
-            model = UniMol(return_repr=True, return_atomic_reprs=False, remove_hs=True, use_pretrained=False)
+            model = UniMol(return_repr=True, return_atomic_reprs=False, remove_hs=True, use_pretrained=True if self.model_name == "UniMol" else False)
+            model.classification_head = nn.Identity()
             graph_pred_linear = None
 
         elif self.model_name == "DimeNet":

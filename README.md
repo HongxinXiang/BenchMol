@@ -13,49 +13,71 @@
 <p align="center"><img src="https://github.com/HongxinXiang/BenchMol/blob/master/assets/framework.png" alt="BenchMol framework" width="90%" /></p>
 
 
+---
+
+## Table of Contents
+
+- [News](#news)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Benchmarks](#benchmarks)
+  - [MBANet](#mbanet)
+  - [StructNet](#structnet)
+- [Tutorials](#tutorials)
+  - [Feature Extraction](#feature-extraction)
+  - [Linear Probing](#linear-probing)
+  - [Fine-tuning](#fine-tuning)
+  - [Bench3M and Bench4M](#bench3m-and-bench4m)
+- [Releases](#releases)
+- [Citation](#citation)
+- [Acknowledgements](#acknowledgements)
+
+---
+
 
 # News !
 
 - [2024/09/17] benchmol is released on GitHub.
 
 
+---
 
-# Features !
+## Key Features
 
-- Supports Property Prediction, ADMET, QSAR, Virtual Screening and More
+- **Task coverage:** property prediction, ADMET, QSAR, virtual screening, and more.
+- **Multi-modality support:** fingerprint, sequence, graph, geometry graph, image, geometry image, and video.
+- **Broad baseline coverage:** a large collection of strong baselines for different molecular modalities.
+- **New benchmarks:** **MBANet** and **StructNet**.
 
-- Supports 7 different modalities of molecules, including fingerprint, sequence, graph, geometry graph, image, geometry image, and video.
-
-- Supports a large number of baselines for molecular data of different modalities.
-
-- Two novel benchmarks: MBANet and StructNet.
-
+---
 
 
 # Installation
 
-## From PyPi
+### From PyPi
 
 ```bash
 conda create --name test_env python=3.9
 pip install benchmol
 ```
 
-- If the dependencies are not automatically installed, use the following command to initialize the dependency environment:
+If some dependencies are not installed automatically, install them via:
 
 ```bash
 pip install -r requirements_pip.txt
 ```
 
+> Tip: If you encounter CUDA / PyTorch issues, please install a matching PyTorch version first, then install BenchMol.
+
+---
 
 
 # Benchmarks
 
-BenchMol provides two new benchmarks, MBANet and StructNet.
+BenchMol provides two benchmarks: **MBANet** and **StructNet**.
 
 
-
-## MBANet
+### MBANet
 
 | Name   | Link                                                         | Description                                                  |
 | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -63,7 +85,7 @@ BenchMol provides two new benchmarks, MBANet and StructNet.
 
 
 
-## StructNet
+### StructNet
 
 | Name                        | Link                                                         | Description                                                  |
 | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -75,13 +97,14 @@ BenchMol provides two new benchmarks, MBANet and StructNet.
 
 # Tutorials
 
-We provide examples of using benchmol, please see below:
+We provide tutorial notebooks demonstrating typical BenchMol workflows.
 
 
 
 ## Feature Extraction
 
-The following shows a use case of extracting features from different modalities with benchmol:
+BenchMol supports feature extraction from a wide range of molecular modalities.  
+The following notebooks show how to generate features that can later be used for fusion, probing, or downstream training.
 
 | Description                                                  | Tutorial Links                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -92,17 +115,19 @@ The following shows a use case of extracting features from different modalities 
 | Extracting features from molecular image using ImageMol      | [1_extract_image_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_image_features.ipynb) |
 | Extracting features from video using VideoMol                | [1_extract_video_features.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/1_extract_video_features.ipynb) |
 
+The extracted outputs follow a unified format and can be plugged directly into the Bench3M / Bench4M pipelines below.
 
 
 ## Linear Probing
 
-Use case for linear probing is provided with benchmol: [2_linear_probing.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/2_linear_probing.ipynb)
+A complete linear probing example is provided here:  
+- [2_linear_probing.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/2_linear_probing.ipynb)
 
 
 
 ## Fine-tuning
 
-Use case for fine-tuning is provided with benchmol: 
+Fine-tuning examples for different modalities are provided below:
 
 | Description                              | Tutorial Links                                                        |
 |------------------------------------------|-----------------------------------------------------------------------|
@@ -114,20 +139,62 @@ Use case for fine-tuning is provided with benchmol:
 | Fine-tuning with geometry video modality | [3_fine_tuning_video.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/3_fine_tuning_video.ipynb)    |
 
 
+## Bench3M and Bench4M
+
+We provide **pre-extracted multi-modal features** for Bench3M and Bench4M,
+so users can directly reproduce the training and evaluation results without
+running the often time-consuming feature extraction stage.
+
+The features can be downloaded from:
+
+👉 **[Bench3M-4M Features (MoleculeNet)](https://1drv.ms/u/c/53030532e7d1aed6/IQD0l64eeP4TR5i_95iq9m7YAdWEs7So1ln2pFiFjc30I8U?e=WpHWfv)**
+
+After downloading, place the feature files in your preferred data directory.
+The tutorial notebooks allow you to specify the paths when constructing the dataset.
+
+#### Running Examples
+
+The following notebooks demonstrate how to train fusion / linear probing models using the provided features.
+
+| Description         | Tutorial Links                                                                                    |
+|---------------------|---------------------------------------------------------------------------------------------------|
+| **Bench3M**         | [4_Bench3M.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/4_Bench3M.ipynb) |
+| **Bench4M**         | [4_Bench4M.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/4_Bench4M.ipynb) |
+
+Each tutorial includes:
+
+- loading pre-extracted features  
+- building the fusion / probing architecture  
+- training and validation  
+- evaluation and prediction saving  
+
+These pipelines can be easily adapted to custom datasets or newly extracted features.
+
+---
+
+#### Using Your Own Features
+
+If you prefer not to use the pre-computed features, you can generate them
+with BenchMol using the feature extraction workflows described above.
+
 
 # Releases
-For more information on BenchMol versions, see the [Releases page](https://github.com/HongxinXiang/BenchMol/blob/master/RELEASE.md).
+
+For version history and changelogs, see:  
+- [Releases page](https://github.com/HongxinXiang/BenchMol/blob/master/RELEASE.md).
 
 
 # Reference
 
-If you find our code or anything else helpful, please do not hesitate to cite the following relevant papers:
+If you find BenchMol useful, please consider citing our work:
 
-```xml
+```bibtex
 
 ```
 
 
 
-# Acknowledge
+## Acknowledgements
+
+We thank the open-source community for the excellent molecular ML toolchains and datasets that BenchMol builds upon.
 
