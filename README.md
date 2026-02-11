@@ -52,7 +52,7 @@
 ---
 
 
-# Installation
+## Installation
 
 ### From PyPi
 
@@ -68,11 +68,25 @@ pip install -r requirements_pip.txt
 ```
 
 > Tip: If you encounter CUDA / PyTorch issues, please install a matching PyTorch version first, then install BenchMol.
+---
+
+## 🚀 Quick Start (Bench3M / Bench4M in 5 Minutes)
+
+1. Download the pre-extracted features from the link in the **Bench3M and Bench4M** section.
+2. Open one of the tutorial notebooks:
+   - `4_Bench3M.ipynb` or  
+   - `4_Bench4M.ipynb`
+3. Set the feature path.
+4. Run the notebook from top to bottom.
+
+The notebooks are self-contained and reproduce training, validation,
+and prediction with minimal configuration.
+
 
 ---
 
 
-# Benchmarks
+## Benchmarks
 
 BenchMol provides two benchmarks: **MBANet** and **StructNet**.
 
@@ -95,7 +109,7 @@ BenchMol provides two benchmarks: **MBANet** and **StructNet**.
 
 
 
-# Tutorials
+## Tutorials
 
 We provide tutorial notebooks demonstrating typical BenchMol workflows.
 
@@ -161,7 +175,7 @@ The following notebooks demonstrate how to train fusion / linear probing models 
 | **Bench3M**         | [4_Bench3M.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/4_Bench3M.ipynb) |
 | **Bench4M**         | [4_Bench4M.ipynb](https://github.com/HongxinXiang/BenchMol/blob/master/tutorials/4_Bench4M.ipynb) |
 
-Each tutorial includes:
+Each tutorial now provides a clean, end-to-end pipeline and includes:
 
 - loading pre-extracted features  
 - building the fusion / probing architecture  
@@ -178,13 +192,13 @@ If you prefer not to use the pre-computed features, you can generate them
 with BenchMol using the feature extraction workflows described above.
 
 
-# Releases
+## Releases
 
 For version history and changelogs, see:  
 - [Releases page](https://github.com/HongxinXiang/BenchMol/blob/master/RELEASE.md).
 
 
-# Citation
+## Citation
 
 If you find BenchMol useful, please consider citing our work:
 
