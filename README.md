@@ -184,7 +184,7 @@ For version history and changelogs, see:
 - [Releases page](https://github.com/HongxinXiang/BenchMol/blob/master/RELEASE.md).
 
 
-# Reference
+# Citation
 
 If you find BenchMol useful, please consider citing our work:
 
