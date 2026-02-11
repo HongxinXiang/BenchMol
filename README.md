@@ -35,7 +35,7 @@
 ---
 
 
-# News !
+## News
 
 - [2024/09/17] benchmol is released on GitHub.
 
